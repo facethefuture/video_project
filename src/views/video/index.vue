@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div :class="$style.box">
+      sssss
       <ul
         v-infinite-scroll="loadMore"
         infinite-scroll-disabled="loading"
@@ -41,6 +42,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss" module>
+.box{
+  font-size: 20px;
+}
 </style>
